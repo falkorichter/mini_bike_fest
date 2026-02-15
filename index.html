@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<script>
+// Logo switching based on GET parameter
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const logoParam = urlParams.get('logo');
+    const logoElement = document.getElementById('main-logo-img');
+    
+    if (logoParam === '1') {
+        logoElement.src = '{{ "/mini bike fest inverted_logo_1.svg" | relative_url }}';
+    } else if (logoParam === '2') {
+        logoElement.src = '{{ "/mini bike fest inverted_logo_2.svg" | relative_url }}';
+    } else if (logoParam === '3') {
+        logoElement.src = '{{ "/mini bike fest inverted_logo_3.svg" | relative_url }}';
+    } else {
+        // Default to logo 1 if no parameter or invalid parameter
+        logoElement.src = '{{ "/mini bike fest inverted_logo_1.svg" | relative_url }}';
+    }
+});
+</script>
+
+<div class="main-logo">
+    <img id="main-logo-img" src="" alt="MINI BIKE FEST Logo">
+</div>
+
+<div class="event-info">
+    <h1>HANDBUILD BIKES + TEXTILES</h1>
+    <h2>SHOW OFF, TEST RIDES, FREE ENTRY</h2>
+    
+    <div class="event-details">
+        <p><strong>May 30th, 2026</strong></p>
+        <p>Berlin - craftwerk.berlin</p>
+        <p>12:00 - 20:00</p>
+    </div>
+</div>
+
+<div class="blog-section">
+    <h3>Blog</h3>
+    <ul class="blog-posts">
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
+        </li>
+        {% endfor %}
+        {% if site.posts.size == 0 %}
+        <li>No posts yet - check back soon!</li>
+        {% endif %}
+    </ul>
+</div>
+
+<div class="vendors">
+    <h3>Vendors</h3>
+    <ul>
+        <li>List of vendors to be announced</li>
+    </ul>
+</div>
+
+<div class="social-links">
+    <a href="https://www.instagram.com/minibikesfest" target="_blank" rel="noopener noreferrer">
+        Follow us on Instagram
+    </a>
+</div>
