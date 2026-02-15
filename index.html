@@ -7,6 +7,7 @@ layout: default
 document.addEventListener('DOMContentLoaded', function() {
     const urlParams = new URLSearchParams(window.location.search);
     const logoParam = urlParams.get('logo');
+    const whiteParam = urlParams.get('white');
     const logoElement = document.getElementById('main-logo-img');
     
     if (logoParam === '1') {
@@ -18,6 +19,11 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         // Default to logo 1 if no parameter or invalid parameter
         logoElement.src = '{{ "/mini bike fest inverted_logo_1.svg" | relative_url }}';
+    }
+    
+    // Apply white filter if requested
+    if (whiteParam === '1' || whiteParam === 'true') {
+        logoElement.classList.add('logo-white');
     }
 });
 </script>
@@ -62,4 +68,33 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="https://www.instagram.com/minibikesfest" target="_blank" rel="noopener noreferrer">
         Follow us on Instagram
     </a>
+</div>
+
+<div class="logo-matrix">
+    <h3>Try Different Logo Styles</h3>
+    <p>Click below to preview different logo combinations:</p>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Logo 1</th>
+                <th>Logo 2</th>
+                <th>Logo 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Normal</strong></td>
+                <td><a href="?logo=1">View</a></td>
+                <td><a href="?logo=2">View</a></td>
+                <td><a href="?logo=3">View</a></td>
+            </tr>
+            <tr>
+                <td><strong>White</strong></td>
+                <td><a href="?logo=1&white=1">View</a></td>
+                <td><a href="?logo=2&white=1">View</a></td>
+                <td><a href="?logo=3&white=1">View</a></td>
+            </tr>
+        </tbody>
+    </table>
 </div>
