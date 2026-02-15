@@ -11,14 +11,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const logoElement = document.getElementById('main-logo-img');
     
     if (logoParam === '1') {
-        logoElement.src = '{{ "/mini bike fest inverted_logo_1.svg" | relative_url }}';
+        logoElement.src = '{{ "/mini-bike-fest-inverted-logo-1.svg" | relative_url }}';
     } else if (logoParam === '2') {
-        logoElement.src = '{{ "/mini bike fest inverted_logo_2.svg" | relative_url }}';
+        logoElement.src = '{{ "/mini-bike-fest-inverted-logo-2.svg" | relative_url }}';
     } else if (logoParam === '3') {
-        logoElement.src = '{{ "/mini bike fest inverted_logo_3.svg" | relative_url }}';
+        logoElement.src = '{{ "/mini-bike-fest-inverted-logo-3.svg" | relative_url }}';
     } else {
         // Default to logo 1 if no parameter or invalid parameter
-        logoElement.src = '{{ "/mini bike fest inverted_logo_1.svg" | relative_url }}';
+        logoElement.src = '{{ "/mini-bike-fest-inverted-logo-1.svg" | relative_url }}';
     }
     
     // Apply white filter if requested
