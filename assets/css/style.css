@@ -1,6 +1,11 @@
 ---
 ---
 
+:root {
+    --purple-light: rgba(139, 95, 191, 0.8);
+    --purple-dark: rgba(45, 27, 78, 0.6);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +31,14 @@ body {
     animation: gradientShift 15s ease infinite;
     color: white;
     min-height: 100vh;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body {
+        animation: none;
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+    }
 }
 
 .logo-bike {
@@ -77,8 +90,8 @@ body {
     letter-spacing: 3px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    text-shadow: 3px 3px 0px rgba(139, 95, 191, 0.8), 
-                 6px 6px 0px rgba(45, 27, 78, 0.6);
+    text-shadow: 3px 3px 0px var(--purple-light), 
+                 6px 6px 0px var(--purple-dark);
 }
 
 .event-info h2 {
@@ -86,8 +99,8 @@ body {
     letter-spacing: 2px;
     margin-bottom: 15px;
     text-transform: uppercase;
-    text-shadow: 2px 2px 0px rgba(139, 95, 191, 0.8), 
-                 4px 4px 0px rgba(45, 27, 78, 0.6);
+    text-shadow: 2px 2px 0px var(--purple-light), 
+                 4px 4px 0px var(--purple-dark);
 }
 
 .event-info p {
@@ -113,7 +126,7 @@ body {
     font-size: 1.5em;
     margin-bottom: 15px;
     text-transform: uppercase;
-    text-shadow: 2px 2px 0px rgba(139, 95, 191, 0.8);
+    text-shadow: 2px 2px 0px var(--purple-light);
 }
 
 .vendors ul {
@@ -138,7 +151,7 @@ body {
     font-size: 1.5em;
     margin-bottom: 15px;
     text-transform: uppercase;
-    text-shadow: 2px 2px 0px rgba(139, 95, 191, 0.8);
+    text-shadow: 2px 2px 0px var(--purple-light);
 }
 
 .blog-posts {
@@ -180,7 +193,7 @@ body {
 }
 
 .social-links a:hover {
-    background-color: rgba(139, 95, 191, 0.8);
+    background-color: var(--purple-light);
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
 }
