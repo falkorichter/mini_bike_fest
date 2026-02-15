@@ -29,13 +29,41 @@ You can make the logo display in white by adding the `white` parameter:
 
 - **White logo:** `?white=1` or `?white=true` - Makes the logo white
 
+### Background Options
+
+You can add a bike SVG to the background with optional street-style texture effects:
+
+- **Bike background:** `?bike=1` - Adds the bike SVG to the gradient background
+- **Texture effects:**
+  - `?bike=1&texture=graffiti` - Adds graffiti-style crosshatch texture
+  - `?bike=1&texture=spray` - Adds spray paint texture effect
+  - `?bike=1&texture=vintage` - Adds vintage film grain texture
+
 ### Examples:
+
+#### Logo Variations
 
 | Logo | Default Color | White |
 |------|---------------|-------|
 | Logo 1 | [View](https://falkorichter.github.io/mini_bike_fest/) | [View](https://falkorichter.github.io/mini_bike_fest/?white=1) |
 | Logo 2 | [View](https://falkorichter.github.io/mini_bike_fest/?logo=2) | [View](https://falkorichter.github.io/mini_bike_fest/?logo=2&white=1) |
 | Logo 3 | [View](https://falkorichter.github.io/mini_bike_fest/?logo=3) | [View](https://falkorichter.github.io/mini_bike_fest/?logo=3&white=1) |
+
+#### Background Variations
+
+| Background | No Texture | Graffiti | Spray | Vintage |
+|------------|------------|----------|-------|---------|
+| Gradient Only | [View](https://falkorichter.github.io/mini_bike_fest/) | N/A | N/A | N/A |
+| With Bike | [View](https://falkorichter.github.io/mini_bike_fest/?bike=1) | [View](https://falkorichter.github.io/mini_bike_fest/?bike=1&texture=graffiti) | [View](https://falkorichter.github.io/mini_bike_fest/?bike=1&texture=spray) | [View](https://falkorichter.github.io/mini_bike_fest/?bike=1&texture=vintage) |
+
+#### Combined Examples (Logo + Background)
+
+| Combination | Link |
+|-------------|------|
+| Logo 1 + Bike + Graffiti | [View](https://falkorichter.github.io/mini_bike_fest/?logo=1&bike=1&texture=graffiti) |
+| Logo 2 + Bike + Spray | [View](https://falkorichter.github.io/mini_bike_fest/?logo=2&bike=1&texture=spray) |
+| Logo 3 White + Bike + Vintage | [View](https://falkorichter.github.io/mini_bike_fest/?logo=3&white=1&bike=1&texture=vintage) |
+| Logo 1 White + Bike + Graffiti | [View](https://falkorichter.github.io/mini_bike_fest/?logo=1&white=1&bike=1&texture=graffiti) |
 
 ## Local Development
 

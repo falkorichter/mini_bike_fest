@@ -3,13 +3,16 @@ layout: default
 ---
 
 <script>
-// Logo switching based on GET parameter
+// Logo switching and background options based on GET parameters
 document.addEventListener('DOMContentLoaded', function() {
     const urlParams = new URLSearchParams(window.location.search);
     const logoParam = urlParams.get('logo');
     const whiteParam = urlParams.get('white');
+    const bikeParam = urlParams.get('bike');
+    const textureParam = urlParams.get('texture');
     const logoElement = document.getElementById('main-logo-img');
     
+    // Handle logo switching
     if (logoParam === '1') {
         logoElement.src = '{{ "/mini-bike-fest-inverted-logo-1.svg" | relative_url }}';
     } else if (logoParam === '2') {
@@ -24,6 +27,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // Apply white filter if requested
     if (whiteParam === '1' || whiteParam === 'true') {
         logoElement.classList.add('logo-white');
+    }
+    
+    // Handle bike background
+    if (bikeParam === '1' || bikeParam === 'true') {
+        document.body.classList.add('bg-with-bike');
+        
+        // Add texture if specified
+        if (textureParam === 'graffiti') {
+            document.body.classList.add('texture-graffiti');
+        } else if (textureParam === 'spray') {
+            document.body.classList.add('texture-spray');
+        } else if (textureParam === 'vintage') {
+            document.body.classList.add('texture-vintage');
+        }
     }
 });
 </script>
