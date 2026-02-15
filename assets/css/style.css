@@ -7,13 +7,23 @@
     box-sizing: border-box;
 }
 
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 body {
     font-family: 'Arial', 'Helvetica', sans-serif;
-    background-image: url('{{ "/background.webp" | relative_url }}');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background: linear-gradient(90deg, #2d1b4e, #4a2b7c, #6b3fa0, #8b5fbf, #a57ed1);
+    background-size: 200% 200%;
+    animation: gradientShift 15s ease infinite;
     color: white;
     min-height: 100vh;
 }
@@ -54,10 +64,12 @@ body {
 
 .event-info {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 30px;
     margin-bottom: 40px;
-    border-radius: 10px;
+    border-radius: 3px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
 .event-info h1 {
@@ -65,6 +77,8 @@ body {
     letter-spacing: 3px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    text-shadow: 3px 3px 0px rgba(139, 95, 191, 0.8), 
+                 6px 6px 0px rgba(45, 27, 78, 0.6);
 }
 
 .event-info h2 {
@@ -72,6 +86,8 @@ body {
     letter-spacing: 2px;
     margin-bottom: 15px;
     text-transform: uppercase;
+    text-shadow: 2px 2px 0px rgba(139, 95, 191, 0.8), 
+                 4px 4px 0px rgba(45, 27, 78, 0.6);
 }
 
 .event-info p {
@@ -85,16 +101,19 @@ body {
 }
 
 .vendors {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 30px;
     margin-bottom: 40px;
-    border-radius: 10px;
+    border-radius: 3px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
 .vendors h3 {
     font-size: 1.5em;
     margin-bottom: 15px;
     text-transform: uppercase;
+    text-shadow: 2px 2px 0px rgba(139, 95, 191, 0.8);
 }
 
 .vendors ul {
@@ -107,16 +126,19 @@ body {
 }
 
 .blog-section {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 25px;
     margin-bottom: 40px;
-    border-radius: 10px;
+    border-radius: 3px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
 .blog-section h3 {
     font-size: 1.5em;
     margin-bottom: 15px;
     text-transform: uppercase;
+    text-shadow: 2px 2px 0px rgba(139, 95, 191, 0.8);
 }
 
 .blog-posts {
@@ -149,14 +171,18 @@ body {
     text-decoration: none;
     font-size: 1.3em;
     padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 3px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
     display: inline-block;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 .social-links a:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(139, 95, 191, 0.8);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 768px) {
