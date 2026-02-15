@@ -2,8 +2,13 @@
 ---
 
 :root {
-    --purple-light: rgba(139, 95, 191, 0.8);
-    --purple-dark: rgba(45, 27, 78, 0.6);
+    --shadow-purple-light: rgba(139, 95, 191, 0.8);
+    --shadow-purple-dark: rgba(45, 27, 78, 0.6);
+    --gradient-purple-1: #2d1b4e;
+    --gradient-purple-2: #4a2b7c;
+    --gradient-purple-3: #6b3fa0;
+    --gradient-purple-4: #8b5fbf;
+    --gradient-purple-5: #a57ed1;
 }
 
 * {
@@ -26,7 +31,7 @@
 
 body {
     font-family: 'Arial', 'Helvetica', sans-serif;
-    background: linear-gradient(90deg, #2d1b4e, #4a2b7c, #6b3fa0, #8b5fbf, #a57ed1);
+    background: linear-gradient(90deg, var(--gradient-purple-1), var(--gradient-purple-2), var(--gradient-purple-3), var(--gradient-purple-4), var(--gradient-purple-5));
     background-size: 200% 200%;
     animation: gradientShift 15s ease infinite;
     color: white;
@@ -90,8 +95,8 @@ body {
     letter-spacing: 3px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    text-shadow: 3px 3px 0px var(--purple-light), 
-                 6px 6px 0px var(--purple-dark);
+    text-shadow: 3px 3px 0px var(--shadow-purple-light), 
+                 6px 6px 0px var(--shadow-purple-dark);
 }
 
 .event-info h2 {
@@ -99,8 +104,8 @@ body {
     letter-spacing: 2px;
     margin-bottom: 15px;
     text-transform: uppercase;
-    text-shadow: 2px 2px 0px var(--purple-light), 
-                 4px 4px 0px var(--purple-dark);
+    text-shadow: 2px 2px 0px var(--shadow-purple-light), 
+                 4px 4px 0px var(--shadow-purple-dark);
 }
 
 .event-info p {
@@ -126,7 +131,7 @@ body {
     font-size: 1.5em;
     margin-bottom: 15px;
     text-transform: uppercase;
-    text-shadow: 2px 2px 0px var(--purple-light);
+    text-shadow: 2px 2px 0px var(--shadow-purple-light);
 }
 
 .vendors ul {
@@ -151,7 +156,7 @@ body {
     font-size: 1.5em;
     margin-bottom: 15px;
     text-transform: uppercase;
-    text-shadow: 2px 2px 0px var(--purple-light);
+    text-shadow: 2px 2px 0px var(--shadow-purple-light);
 }
 
 .blog-posts {
@@ -193,7 +198,7 @@ body {
 }
 
 .social-links a:hover {
-    background-color: var(--purple-light);
+    background-color: var(--shadow-purple-light);
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
 }
