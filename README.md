@@ -30,11 +30,12 @@ You can make the logo display in white by adding the `white` parameter:
 - **White logo:** `?white=1` or `?white=true` - Makes the logo white
 
 ### Examples:
-- `https://falkorichter.github.io/mini_bike_fest/` - Uses logo 1 (default)
-- `https://falkorichter.github.io/mini_bike_fest/?logo=2` - Uses logo 2
-- `https://falkorichter.github.io/mini_bike_fest/?logo=3` - Uses logo 3
-- `https://falkorichter.github.io/mini_bike_fest/?logo=2&white=1` - Uses logo 2 in white
-- `https://falkorichter.github.io/mini_bike_fest/?white=1` - Uses default logo in white
+
+| Logo | Default Color | White |
+|------|---------------|-------|
+| Logo 1 | [View](https://falkorichter.github.io/mini_bike_fest/) | [View](https://falkorichter.github.io/mini_bike_fest/?white=1) |
+| Logo 2 | [View](https://falkorichter.github.io/mini_bike_fest/?logo=2) | [View](https://falkorichter.github.io/mini_bike_fest/?logo=2&white=1) |
+| Logo 3 | [View](https://falkorichter.github.io/mini_bike_fest/?logo=3) | [View](https://falkorichter.github.io/mini_bike_fest/?logo=3&white=1) |
 
 ## Local Development
 
