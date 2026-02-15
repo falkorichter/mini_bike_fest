@@ -1,0 +1,176 @@
+---
+---
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background-image: url('{{ "/background.webp" | relative_url }}');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    min-height: 100vh;
+}
+
+.logo-bike {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 150px;
+    z-index: 100;
+}
+
+.logo-bike img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.main-logo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-logo img {
+    max-width: 600px;
+    width: 90%;
+    height: auto;
+}
+
+.main-logo img.logo-white {
+    filter: brightness(0) invert(1);
+}
+
+.event-info {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.event-info h1 {
+    font-size: 3em;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.event-info h2 {
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.event-info p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.event-details {
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+.vendors {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.vendors h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.vendors ul {
+    list-style: none;
+    font-size: 0.9em;
+}
+
+.vendors li {
+    margin-bottom: 5px;
+}
+
+.blog-section {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.blog-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.blog-posts {
+    list-style: none;
+}
+
+.blog-posts li {
+    margin-bottom: 10px;
+}
+
+.blog-posts a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: opacity 0.3s;
+}
+
+.blog-posts a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+    .event-info h1 {
+        font-size: 2em;
+    }
+    
+    .event-info h2 {
+        font-size: 1.5em;
+    }
+    
+    .logo-bike {
+        width: 100px;
+        top: 10px;
+        right: 10px;
+    }
+}
