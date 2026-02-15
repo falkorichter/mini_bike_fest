@@ -1,8 +1,8 @@
 # Site settings
 title: MINI BIKE FEST
 description: May 30th, 2026 - Berlin - craftwerk.berlin - 12-8pm
-baseurl: ""
-url: "https://falkorichter.github.io/mini_bike_fest"
+baseurl: "/mini_bike_fest"
+url: "https://falkorichter.github.io"
 
 # Build settings
 markdown: kramdown
