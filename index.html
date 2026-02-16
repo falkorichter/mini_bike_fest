@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const whiteParam = urlParams.get('white');
     const bikeParam = urlParams.get('bike');
     const textureParam = urlParams.get('texture');
+    const animateParam = urlParams.get('animate');
     const logoElement = document.getElementById('main-logo-img');
     
     // Handle logo switching
@@ -41,6 +42,11 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (textureParam === 'vintage') {
             document.body.classList.add('texture-vintage');
         }
+    }
+    
+    // Handle gradient animation - disable if animate=0
+    if (animateParam === '0' || animateParam === 'false') {
+        document.body.classList.add('no-animate');
     }
 });
 </script>

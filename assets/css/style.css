@@ -4,11 +4,11 @@
 :root {
     --shadow-purple-light: rgba(139, 95, 191, 0.8);
     --shadow-purple-dark: rgba(45, 27, 78, 0.6);
-    --gradient-purple-1: #2d1b4e;
-    --gradient-purple-2: #4a2b7c;
-    --gradient-purple-3: #6b3fa0;
-    --gradient-purple-4: #8b5fbf;
-    --gradient-purple-5: #a57ed1;
+    --gradient-purple-1: #3d2463;
+    --gradient-purple-2: #5a3a7d;
+    --gradient-purple-3: #7952a8;
+    --gradient-purple-4: #9a6bc4;
+    --gradient-purple-5: #b88dd9;
 }
 
 * {
@@ -37,6 +37,11 @@ body {
     color: white;
     min-height: 100vh;
     position: relative;
+}
+
+body.no-animate {
+    animation: none;
+    background-position: 50% 50%;
 }
 
 body::after {
