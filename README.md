@@ -29,13 +29,65 @@ You can make the logo display in white by adding the `white` parameter:
 
 - **White logo:** `?white=1` or `?white=true` - Makes the logo white
 
+### Background Options
+
+You can add a bike SVG to the background with optional street-style texture effects:
+
+- **Bike background:** Enabled by default with textured SVG (`just bike_filter.svg`)
+- **Bike background disabled:** `?bike=0` - Shows only the gradient background
+- **Original bike SVG:** `?bikesvg=original` - Use the original bike SVG without built-in texture
+- **Animation control:** `?animate=0` - Disables the gradient animation for a static look
+- **Box style:** `?boxstyle=original` - Use the original rounded box style instead of street-style boxes
+- **Texture effects:**
+  - `?texture=graffiti` - Adds graffiti-style crosshatch texture
+  - `?texture=spray` - Adds spray paint texture effect
+  - `?texture=vintage` - Adds vintage film grain texture
+
 ### Examples:
+
+#### Logo Variations
 
 | Logo | Default Color | White |
 |------|---------------|-------|
 | Logo 1 | [View](https://falkorichter.github.io/mini_bike_fest/) | [View](https://falkorichter.github.io/mini_bike_fest/?white=1) |
 | Logo 2 | [View](https://falkorichter.github.io/mini_bike_fest/?logo=2) | [View](https://falkorichter.github.io/mini_bike_fest/?logo=2&white=1) |
 | Logo 3 | [View](https://falkorichter.github.io/mini_bike_fest/?logo=3) | [View](https://falkorichter.github.io/mini_bike_fest/?logo=3&white=1) |
+
+#### Background Variations
+
+| Background | No Texture | Graffiti | Spray | Vintage |
+|------------|------------|----------|-------|---------|
+| With Bike Filtered (Default) | [View](https://falkorichter.github.io/mini_bike_fest/) | [View](https://falkorichter.github.io/mini_bike_fest/?texture=graffiti) | [View](https://falkorichter.github.io/mini_bike_fest/?texture=spray) | [View](https://falkorichter.github.io/mini_bike_fest/?texture=vintage) |
+| With Bike Original SVG | [View](https://falkorichter.github.io/mini_bike_fest/?bikesvg=original) | [View](https://falkorichter.github.io/mini_bike_fest/?bikesvg=original&texture=graffiti) | [View](https://falkorichter.github.io/mini_bike_fest/?bikesvg=original&texture=spray) | [View](https://falkorichter.github.io/mini_bike_fest/?bikesvg=original&texture=vintage) |
+| Gradient Only | [View](https://falkorichter.github.io/mini_bike_fest/?bike=0) | N/A | N/A | N/A |
+
+#### Animation Options
+
+| Animation | With Bike | Gradient Only |
+|-----------|-----------|---------------|
+| Animated (Default) | [View](https://falkorichter.github.io/mini_bike_fest/) | [View](https://falkorichter.github.io/mini_bike_fest/?bike=0) |
+| Static | [View](https://falkorichter.github.io/mini_bike_fest/?animate=0) | [View](https://falkorichter.github.io/mini_bike_fest/?bike=0&animate=0) |
+
+#### Box Style Options
+
+| Style | Description | Link |
+|-------|-------------|------|
+| Street Style (Default) | Sharp borders, darker background, text shadows | [View](https://falkorichter.github.io/mini_bike_fest/) |
+| Original | Rounded corners, lighter background, cleaner look | [View](https://falkorichter.github.io/mini_bike_fest/?boxstyle=original) |
+| Original + No Bike | Original boxes with gradient only | [View](https://falkorichter.github.io/mini_bike_fest/?boxstyle=original&bike=0) |
+
+#### Combined Examples (Logo + Background + Animation + Box Style)
+
+| Combination | Link |
+|-------------|------|
+| Logo 1 + Bike Filtered (Default) | [View](https://falkorichter.github.io/mini_bike_fest/?logo=1) |
+| Logo 1 + Bike Original SVG | [View](https://falkorichter.github.io/mini_bike_fest/?logo=1&bikesvg=original) |
+| Logo 2 + Bike + Graffiti | [View](https://falkorichter.github.io/mini_bike_fest/?logo=2&texture=graffiti) |
+| Logo 3 White + Bike Original + Vintage | [View](https://falkorichter.github.io/mini_bike_fest/?logo=3&white=1&bikesvg=original&texture=vintage) |
+| Logo 1 White + Bike + Graffiti + Static | [View](https://falkorichter.github.io/mini_bike_fest/?logo=1&white=1&texture=graffiti&animate=0) |
+| Logo 2 + Gradient Only + Static | [View](https://falkorichter.github.io/mini_bike_fest/?logo=2&bike=0&animate=0) |
+| Logo 1 + Bike + Original Boxes | [View](https://falkorichter.github.io/mini_bike_fest/?logo=1&boxstyle=original) |
+| Logo 3 White + Original Boxes + Static | [View](https://falkorichter.github.io/mini_bike_fest/?logo=3&white=1&boxstyle=original&animate=0) |
 
 ## Local Development
 
