@@ -48,6 +48,12 @@ document.addEventListener('DOMContentLoaded', function() {
     if (animateParam === '0' || animateParam === 'false') {
         document.body.classList.add('no-animate');
     }
+    
+    // Handle box style - use original style if boxstyle=original
+    const boxStyleParam = urlParams.get('boxstyle');
+    if (boxStyleParam === 'original') {
+        document.body.classList.add('original-boxes');
+    }
 });
 </script>
 

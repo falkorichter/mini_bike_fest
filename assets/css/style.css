@@ -312,6 +312,36 @@ body.bg-with-bike.texture-vintage::before {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
 }
 
+/* Original box style - cleaner, more rounded */
+body.original-boxes .event-info,
+body.original-boxes .vendors,
+body.original-boxes .blog-section {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border: none;
+    box-shadow: none;
+}
+
+body.original-boxes .event-info h1,
+body.original-boxes .event-info h2,
+body.original-boxes .vendors h3,
+body.original-boxes .blog-section h3 {
+    text-shadow: none;
+}
+
+body.original-boxes .social-links a {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    border: none;
+    box-shadow: none;
+}
+
+body.original-boxes .social-links a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: none;
+    box-shadow: none;
+}
+
 @media (max-width: 768px) {
     .event-info h1 {
         font-size: 2em;

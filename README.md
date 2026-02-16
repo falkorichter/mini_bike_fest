@@ -36,6 +36,7 @@ You can add a bike SVG to the background with optional street-style texture effe
 - **Bike background:** `?bike=1` - Adds the bike SVG to the gradient background (enabled by default)
 - **Bike background disabled:** `?bike=0` - Shows only the gradient background
 - **Animation control:** `?animate=0` - Disables the gradient animation for a static look
+- **Box style:** `?boxstyle=original` - Use the original rounded box style instead of street-style boxes
 - **Texture effects:**
   - `?texture=graffiti` - Adds graffiti-style crosshatch texture
   - `?texture=spray` - Adds spray paint texture effect
@@ -65,7 +66,15 @@ You can add a bike SVG to the background with optional street-style texture effe
 | Animated (Default) | [View](https://falkorichter.github.io/mini_bike_fest/) | [View](https://falkorichter.github.io/mini_bike_fest/?bike=0) |
 | Static | [View](https://falkorichter.github.io/mini_bike_fest/?animate=0) | [View](https://falkorichter.github.io/mini_bike_fest/?bike=0&animate=0) |
 
-#### Combined Examples (Logo + Background + Animation)
+#### Box Style Options
+
+| Style | Description | Link |
+|-------|-------------|------|
+| Street Style (Default) | Sharp borders, darker background, text shadows | [View](https://falkorichter.github.io/mini_bike_fest/) |
+| Original | Rounded corners, lighter background, cleaner look | [View](https://falkorichter.github.io/mini_bike_fest/?boxstyle=original) |
+| Original + No Bike | Original boxes with gradient only | [View](https://falkorichter.github.io/mini_bike_fest/?boxstyle=original&bike=0) |
+
+#### Combined Examples (Logo + Background + Animation + Box Style)
 
 | Combination | Link |
 |-------------|------|
@@ -74,6 +83,8 @@ You can add a bike SVG to the background with optional street-style texture effe
 | Logo 3 White + Bike + Vintage | [View](https://falkorichter.github.io/mini_bike_fest/?logo=3&white=1&texture=vintage) |
 | Logo 1 White + Bike + Graffiti + Static | [View](https://falkorichter.github.io/mini_bike_fest/?logo=1&white=1&texture=graffiti&animate=0) |
 | Logo 2 + Gradient Only + Static | [View](https://falkorichter.github.io/mini_bike_fest/?logo=2&bike=0&animate=0) |
+| Logo 1 + Bike + Original Boxes | [View](https://falkorichter.github.io/mini_bike_fest/?logo=1&boxstyle=original) |
+| Logo 3 White + Original Boxes + Static | [View](https://falkorichter.github.io/mini_bike_fest/?logo=3&white=1&boxstyle=original&animate=0) |
 
 ## Local Development
 
