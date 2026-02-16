@@ -33,8 +33,9 @@ You can make the logo display in white by adding the `white` parameter:
 
 You can add a bike SVG to the background with optional street-style texture effects:
 
-- **Bike background:** `?bike=1` - Adds the bike SVG to the gradient background (enabled by default)
+- **Bike background:** Enabled by default with textured SVG (`just bike_filter.svg`)
 - **Bike background disabled:** `?bike=0` - Shows only the gradient background
+- **Original bike SVG:** `?bikesvg=original` - Use the original bike SVG without built-in texture
 - **Animation control:** `?animate=0` - Disables the gradient animation for a static look
 - **Box style:** `?boxstyle=original` - Use the original rounded box style instead of street-style boxes
 - **Texture effects:**
@@ -56,7 +57,8 @@ You can add a bike SVG to the background with optional street-style texture effe
 
 | Background | No Texture | Graffiti | Spray | Vintage |
 |------------|------------|----------|-------|---------|
-| With Bike (Default) | [View](https://falkorichter.github.io/mini_bike_fest/) | [View](https://falkorichter.github.io/mini_bike_fest/?texture=graffiti) | [View](https://falkorichter.github.io/mini_bike_fest/?texture=spray) | [View](https://falkorichter.github.io/mini_bike_fest/?texture=vintage) |
+| With Bike Filtered (Default) | [View](https://falkorichter.github.io/mini_bike_fest/) | [View](https://falkorichter.github.io/mini_bike_fest/?texture=graffiti) | [View](https://falkorichter.github.io/mini_bike_fest/?texture=spray) | [View](https://falkorichter.github.io/mini_bike_fest/?texture=vintage) |
+| With Bike Original SVG | [View](https://falkorichter.github.io/mini_bike_fest/?bikesvg=original) | [View](https://falkorichter.github.io/mini_bike_fest/?bikesvg=original&texture=graffiti) | [View](https://falkorichter.github.io/mini_bike_fest/?bikesvg=original&texture=spray) | [View](https://falkorichter.github.io/mini_bike_fest/?bikesvg=original&texture=vintage) |
 | Gradient Only | [View](https://falkorichter.github.io/mini_bike_fest/?bike=0) | N/A | N/A | N/A |
 
 #### Animation Options
@@ -78,9 +80,10 @@ You can add a bike SVG to the background with optional street-style texture effe
 
 | Combination | Link |
 |-------------|------|
-| Logo 1 + Bike + Graffiti | [View](https://falkorichter.github.io/mini_bike_fest/?logo=1&texture=graffiti) |
-| Logo 2 + Bike + Spray | [View](https://falkorichter.github.io/mini_bike_fest/?logo=2&texture=spray) |
-| Logo 3 White + Bike + Vintage | [View](https://falkorichter.github.io/mini_bike_fest/?logo=3&white=1&texture=vintage) |
+| Logo 1 + Bike Filtered (Default) | [View](https://falkorichter.github.io/mini_bike_fest/?logo=1) |
+| Logo 1 + Bike Original SVG | [View](https://falkorichter.github.io/mini_bike_fest/?logo=1&bikesvg=original) |
+| Logo 2 + Bike + Graffiti | [View](https://falkorichter.github.io/mini_bike_fest/?logo=2&texture=graffiti) |
+| Logo 3 White + Bike Original + Vintage | [View](https://falkorichter.github.io/mini_bike_fest/?logo=3&white=1&bikesvg=original&texture=vintage) |
 | Logo 1 White + Bike + Graffiti + Static | [View](https://falkorichter.github.io/mini_bike_fest/?logo=1&white=1&texture=graffiti&animate=0) |
 | Logo 2 + Gradient Only + Static | [View](https://falkorichter.github.io/mini_bike_fest/?logo=2&bike=0&animate=0) |
 | Logo 1 + Bike + Original Boxes | [View](https://falkorichter.github.io/mini_bike_fest/?logo=1&boxstyle=original) |

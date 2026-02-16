@@ -34,6 +34,12 @@ document.addEventListener('DOMContentLoaded', function() {
     if (bikeParam !== '0' && bikeParam !== 'false') {
         document.body.classList.add('bg-with-bike');
         
+        // Check if original SVG (without filter) should be used
+        const bikeSvgParam = urlParams.get('bikesvg');
+        if (bikeSvgParam === 'original') {
+            document.body.classList.add('original-svg');
+        }
+        
         // Add texture if specified
         if (textureParam === 'graffiti') {
             document.body.classList.add('texture-graffiti');

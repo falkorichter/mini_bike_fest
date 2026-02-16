@@ -81,11 +81,17 @@ body::after {
 
 body.bg-with-bike {
     background-image: 
-        url('{{ "/just bike.svg" | relative_url }}'),
+        url('{{ "/just bike_filter.svg" | relative_url }}'),
         linear-gradient(90deg, var(--gradient-purple-1), var(--gradient-purple-2), var(--gradient-purple-3), var(--gradient-purple-4), var(--gradient-purple-5));
     background-position: center center, 0% 50%;
     background-repeat: no-repeat, no-repeat;
     background-size: 80% auto, 200% 200%;
+}
+
+body.bg-with-bike.original-svg {
+    background-image: 
+        url('{{ "/just bike.svg" | relative_url }}'),
+        linear-gradient(90deg, var(--gradient-purple-1), var(--gradient-purple-2), var(--gradient-purple-3), var(--gradient-purple-4), var(--gradient-purple-5));
 }
 
 body.bg-with-bike.texture-graffiti {
