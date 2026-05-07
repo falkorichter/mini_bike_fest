@@ -228,6 +228,19 @@ body.bg-with-bike.texture-vintage::before {
     margin-bottom: 10px;
 }
 
+.event-features {
+    list-style: none;
+    font-size: 1.3em;
+    margin: 20px 0;
+    padding: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.event-features li {
+    margin-bottom: 6px;
+}
+
 .event-details {
     font-size: 1.1em;
     margin-top: 20px;
@@ -329,7 +342,6 @@ body.original-boxes .blog-section {
 }
 
 body.original-boxes .event-info h1,
-body.original-boxes .event-info h2,
 body.original-boxes .vendors h3,
 body.original-boxes .blog-section h3 {
     text-shadow: none;
@@ -353,8 +365,8 @@ body.original-boxes .social-links a:hover {
         font-size: 2em;
     }
     
-    .event-info h2 {
-        font-size: 1.5em;
+    .event-features {
+        font-size: 1.1em;
     }
     
     .logo-bike {
